@@ -42,9 +42,10 @@ const Play = () => {
     setChosenAnswer(answer);
     setIsCorrect(correct);
     setIsFlipped(true);
-
+    let updatedScore = score;
     if (correct) {
       incrementScore();
+      updatedScore += 1;
     }
 
     setTimeout(async () => {
@@ -60,7 +61,7 @@ const Play = () => {
         if (uid) {
           const payload = {
             topic,
-            score,
+            score: updatedScore,
             uid,
             questions_count: questions.length,
           };

@@ -15,6 +15,10 @@ export default function NavBar() {
     if (uid && location.pathname === "/auth") {
       navigate("/game");
     }
+
+    if (uid && location.pathname === "/") {
+      navigate("/game");
+    }
   }, [uid, location.pathname, navigate]);
 
   const handleLogout = () => {
@@ -23,7 +27,6 @@ export default function NavBar() {
   };
 
   const handleLogoClick = () => {
-    console.log(useGameData.getState());
     if (uid) {
       navigate("/game");
     } else {
@@ -44,7 +47,6 @@ export default function NavBar() {
       const res = await axios.get(baseUrl);
       setGameHistory(res.data?.data);
       setShowHistory(true);
-      console.log(useGameData.getState());
     } catch (err) {
       alert("Error fetching game history. Please try again later.");
     }

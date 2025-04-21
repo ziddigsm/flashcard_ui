@@ -15,10 +15,10 @@ export default function Home() {
       .then((res) => {
         const funfacts = res.data?.data;
         setFunFacts(funfacts);
-        console.log(useGameData.getState());
       })
       .catch((err) => {
         console.log(err.message);
+        return;
       });
   };
   const handleGameStart = (e) => {

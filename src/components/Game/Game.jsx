@@ -40,7 +40,7 @@ export default function Game() {
 
     const interval = setInterval(() => {
       setFactIndex((index) => index + 1);
-    }, 2000);
+    }, 2500);
     return () => clearInterval(interval);
   }, [isLoading, factIndex, funfacts]);
 
@@ -63,7 +63,6 @@ export default function Game() {
       .get(apiURL)
       .then((res) => {
         setGameQuestions(res.data.data);
-        console.log(useGameData.getState());
         setIsLoading(false);
         setCurrentQuestion(0);
         setScore(0);
@@ -71,7 +70,6 @@ export default function Game() {
         navigate("/play-game");
       })
       .catch((err) => {
-        console.log(err.message);
         setIsLoading(false);
       });
   };
@@ -89,7 +87,7 @@ export default function Game() {
           getQuestionsRequest(getQuestionsUrl);
         } else {
           showWarning(
-            "Are you sure you want to proceed. There are spelling mistakes in your topic. SuggestedWords: "
+            "Are you sure you want to proceed. There are spelling mistakes in your topic. "
           );
         }
       })

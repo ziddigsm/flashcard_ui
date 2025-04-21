@@ -54,7 +54,6 @@ export default function AuthForm() {
             email,
             uid: res?.user.uid,
           };
-          console.log(res);
           await axios.post(import.meta.env.VITE_API_CREATE_USER, payload);
           setUserData(res?.user.uid);
         });
@@ -67,9 +66,7 @@ export default function AuthForm() {
             setUserData(res.data?.data.uid);
           });
         });
-        console.log(useGameData.getState());
       }
-      setName;
       navigate("/game");
     } catch (er) {
       setError(er.message || "Could not create account. Please try again.");

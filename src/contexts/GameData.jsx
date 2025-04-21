@@ -39,7 +39,7 @@ const useGameData = create(
           email: "",
           uid: "",
           topic: "",
-          gameHistory: {},
+          gameHistory: null,
         }),
     }),
     {

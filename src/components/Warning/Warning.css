@@ -1,0 +1,68 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-box {
+    background-color: #f9f9fc;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    max-width: 400px;
+    width: 80%;
+    padding: 1rem;
+    position: relative;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    margin-bottom:0.5rem;
+    font-weight: 600;
+}
+
+.modal-message {
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.modal-actions {
+    display:flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.button-no {
+    background-color: transparent;
+    color: #4b5563;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-no:hover {
+    color: #1f2937;
+}
+
+.button-yes {
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: rgb(229, 130, 245);
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-yes:hover {
+    background-color: rgb(224, 27, 198);
+}

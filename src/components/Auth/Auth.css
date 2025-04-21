@@ -1,0 +1,107 @@
+.auth {
+    background: linear-gradient(to right, #c3ecf5, #fbd3e9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .auth-home {
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    width: 90%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #efb7d5;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .auth-home:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #1d041e;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .input-name {
+    padding: 10px 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input-name:focus {
+    border-color: #ac37b9;
+    outline: none;
+  }
+  
+  .auth-play-button {
+    background-color: rgb(229, 130, 245);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .auth-play-button:hover {
+    background-color: rgb(224, 27, 198);
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  .auth-play-button:active {
+    transform: scale(0.95);
+  }
+  
+  .error-text {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .auth-home {
+      width: 95vw;
+      padding: 16px;
+    }
+  
+    .auth-title {
+      font-size: 1.5rem;
+    }
+  
+    .auth-play-button {
+      padding: 10px 16px;
+      font-size: 0.95rem;
+    }
+  }
+  

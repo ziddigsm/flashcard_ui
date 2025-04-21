@@ -1,0 +1,107 @@
+.navbar {
+    background: linear-gradient(to right, #c3ecf5, #fbd3e9);
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #6a0dad;
+    cursor: pointer;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  
+  .nav-button:hover {
+    background-color: rgb(224, 27, 198);
+  }
+  
+  .nav-username {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  
+
+  .history-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .history-panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .history-panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .history-item:last-child {
+    border-bottom: none;
+  }
+  
+  .history-panel button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 8px 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .history-panel button:hover {
+    background-color: #3367d6;
+  }
+  
+  .nav-button {
+    padding: 8px 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  

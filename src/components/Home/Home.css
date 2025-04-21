@@ -1,0 +1,119 @@
+.app {
+    background: linear-gradient(to right, #c3ecf5, #fbd3e9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-home {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 300px;
+    height: auto;
+    max-width: 80%;
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    border: 1px solid #efb7d5;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.app-home:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.app-play-button {
+    background-color: rgb(229, 130, 245);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    gap: 5px;
+}
+
+.app-play-button:hover {
+    color: white;
+    background-color: rgb(224, 27, 198);
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.app-play-button:active {
+    transform: scale(0.95);
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.app-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #1d041e;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.app-description {
+    font-size: 1rem;
+    color: #221a1a;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.input-name {
+    padding: 10px 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: small;
+    border: 1px solid #ccc ;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-name:focus {
+    border-color: #ac37b9;
+    outline: none;
+}
+
+.name-form {
+   justify-content:  center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+   width: 50%;
+
+}
+
+@media (max-width: 768px) {
+    .app-home {
+        width: 95vw;
+        padding: 16px;
+    }
+    .app-title {
+        font-size: 1.5rem;
+    }
+    .app-description {
+        font-size: 0.95rem;
+    }
+    .app-play-button {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+        text-wrap: nowrap;
+    }
+}

@@ -1,12 +1,42 @@
-# React + Vite
+# ⚡ Flashcards Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive flashcard game built with **React**, **Vite**, and **Tailwind CSS**. This app allows users to play quiz-style flashcards, track scores, and engage with fun facts while learning. Integrated with **Google Firebase** for authentication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎮 Features
 
-## Expanding the ESLint configuration
+- Topic-based flashcard quiz
+- Guest play and user login (Firebase Auth)
+- Score tracking and result display
+- Fun facts shown during loading states
+- API integration with backend for questions, scores, and facts
+- Responsive design with smooth animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React
+- **Build Tool:** Vite
+- **Styling:** Vanilla CSS
+- **Routing:** React Router
+- **State Management:** Context API and Zustand along with React Hooks
+- **API Handling:** Axios
+- **Authentication & Identity:** Google Firebase
+
+---
+
+## 🔐 Firebase Integration
+
+This app uses **Firebase Authentication** to:
+- Allow users to create and sign in with their personal email ID
+- Persist login sessions
+- Save and retrieve user-specific game history
+
+## 🧾 Pages / Components
+
+- `/` — Home page with name input and signup/signin navigation
+- `/game` — Game setup and loading
+- `/play` — Flashcard game interface
+- `/result` — Final score and review
